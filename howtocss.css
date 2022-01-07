@@ -1,0 +1,206 @@
+/*Programmer: -Real Name-, Date of completion, 03/03/2020, 08:20 AM EST*/
+
+@font-face {
+  font-family: CircularStd-Medium;
+  src: url("CircularStd-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Courier New", Courier, monospace;
+  src: format(truetype);
+}
+
+/* selector, proporty, value */
+html {
+  word-wrap: normal;
+  background-color: #264de4;
+  font-family: CircularStd-Medium;
+  color: #ebebeb;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  line-height: 25px;
+}
+h1 {
+  font-family: CircularStd-Medium;
+  color: #ebebeb;
+  font-size: 50px;
+  word-wrap: normal;
+  border-radius: 4px;
+}
+
+.header {
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+body {
+  text-decoration-color: #2965f1;
+}
+
+h1 > .header > img {
+  position: absolute;
+  right: 7%;
+  top: -105%;
+  z-index: -1;
+}
+
+code {
+  background: #141414;
+  color: #ebebeb;
+  font-family: "Courier New", Courier, monospace;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+div.code {
+  background-color: #141414;
+  color: #ebebeb;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17.5px;
+  padding: 20px;
+  display: block;
+  word-wrap: normal;
+  text-align: left;
+  line-height: normal;
+}
+
+div.a {
+  background-color: #ebebeb;
+  color: #141414;
+  padding: 5px;
+  font-size: 25px;
+  border-radius: 4px;
+}
+
+div.b {
+  background-color: #141414;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #ebebeb;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17.5px;
+}
+
+div.c {
+  font-family: CircularStd-Medium;
+  color: #ebebeb;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.d {
+  font-family: CircularStd-Medium;
+  color: #ebebeb;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.e {
+  margin-left: 15px;
+}
+
+td {
+  text-align: center;
+}
+
+div.error {
+  color: #e4264d;
+  text-shadow: -1px -1px 0 #141414, 1px -1px 0 #141414, -1px 1px 0 #141414,
+    1px 1px 0 #141414;
+}
+
+div.noerrors {
+  color: #26e45e;
+}
+
+h3 {
+  background-color: #264de4;
+  font-family: CircularStd-Medium;
+  color: #ebebeb;
+  font-size: 35px;
+  margin-top: 50px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  text-align: right;
+}
+
+h3.code {
+  font-size: 20px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #141414;
+  font-weight: normal;
+}
+
+.url {
+  color: #dcdc9d;
+}
+
+.selector {
+  color: #d7ba6e;
+}
+
+.punctuation {
+  color: #ebebeb;
+}
+
+.property {
+  color: #9cdcfe;
+}
+
+.value {
+  color: #ce916a;
+}
+
+.number {
+  color: #a7c077;
+}
+
+.font-face {
+  color: #c586c0;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 17.5px;
+}
+
+h4 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #9cdcfe;
+}
+
+.htmlelement {
+  color: #3f9cd6;
+}
+
+.htmlltgt {
+  color: #808080;
+}
+
+div.scrollmenu {
+  background-color: #141414;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+div.scrollmenu span {
+  display: in-block;
+  text-decoration: none;
+}
+
+pre {
+  text-align: left;
+}

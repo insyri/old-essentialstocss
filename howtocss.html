@@ -1,0 +1,719 @@
+<!--Programmer: -Real Name-, Date of completion, 03/03/2020, 08:20 AM EST-->
+
+<!DOCTYPE html>
+<!--Links css sheet to html-->
+<link rel="stylesheet" href="howtocss.css">
+<html>
+    <!--<head>-->
+        <h1>
+            <div class="header">
+                Essentials to CSS (Early 2020)&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="css3.png" width="54.4px" height="76.7px">
+            </div>
+        </h1>
+    <!--</head>-->
+    <body>
+        <div class=a>
+            <h2>
+                Table Of Contents
+            </h2>
+        </div>
+    </body>
+    <body>
+        <div class=d>
+            <br>
+            <table>
+                <tr>
+                    <th>Main Headers</th>
+                    <th>&nbsp;&nbsp;&nbsp;</th>
+                    <th>Properties</th>
+                    <th>&nbsp;&nbsp;&nbsp;</th>
+                    <th>Links</th>
+                </tr>
+                <tr>
+                    <td><a href="#CSS Introduction">CSS Introduction.</a></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><span class=e><a href="#background-color">background&hyphen;color property.</a></span></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><a href="https://www.w3schools.com/cssref/">w3schools</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#CSS Declarations">CSS Declarations.</a></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><span class=e><a href="#color">color property.</a></span></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Mozilla Web Docs &lpar;CSS&rpar;</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#Selectors">Selectors.</a></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><span class=e><a href="#font-family">font&hyphen;family property.</a></span></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><a href="#Properties">Properties.</a></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><span class=e><a href="#font-size">font&hyphen;size property.</a></span></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><a href="#@font-face">&commat;font&hyphen;face at rule.</a></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><span class=e><a href="#font-weight">font&hyphen;weight property.</a></span></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><span class=e><a href="#word-wrap">word&hyphen;wrap property.</a></span></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><span class=e><a href="#margin">margin property.</a></span></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td><span class=e><a href="#border">border property.</a></span></td>
+                    <td>&nbsp;&nbsp;&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            <br>
+        </div>
+    </body>
+    <body>
+        <div class=a>
+            <h2>
+                The CSS Syntax.
+            </h2>
+        </div>
+    </body>
+    <body>
+        <h3 id="CSS Introduction">
+            CSS Introduction.
+        </h3>
+        <div class=c>
+            <p>The fundamental goal of the Cascading Stylesheet language is to allow a service engine to edit HTML elements&comma; such as coloring&comma; repositioning&comma; and generally artistically revising the HTML&period;
+            Some important components as the main building blocks of CSS are&colon;</p>
+            <li>Selector</li>
+            <li>Property</li>
+            <li>Value</li>
+            <p>The <strong>Selector</strong> is the specific line of code in HTML that will be edited with the following properties&period;</p>
+            <p>The <strong>Property</strong> is the actual <em>identifier</em>&comma; meaning that this is the specific feature that is looked upon&period;</p>
+            <p>The <strong>Value</strong> describes <em>how</em> it will be handled in the engine&comma; meaning the ammount of x will happen&period;</p>
+            <p>Note the actual CSS code is in the <code><span class="htmlltgt">&lt;</span><span class="htmlelement">&sol;style</span><span class="htmlltgt">&gt;</span></code> indent&comma; the rest is HTML&period;</p>
+        </div>
+        <h3 id="CSS Declarations">
+            CSS Declarations.
+        </h3>
+        <div class=c>
+            CSS is a series of setting different HTML declarations all making up a function&period;
+            A value and property pair is dubbed &OpenCurlyQuote;<em>a declaration</em>&CloseCurlyQuote;&comma; this is used to style every tag and element in the HTML document type&period;
+            <a href="https://www.w3schools.com/cssref/">A list of CSS Refrence Values from w3schools&period;com</a>
+        </div>
+        <!--divider-->
+        <h3 id="Selectors">
+            Selectors.
+        </h3>
+        <div class=c>
+            In the beginning of every CSS code&comma; the first string will be the defined object&period;
+            This can be multiple or a specific part of an HTML object&period;
+        </div>
+        <li><span class="selector">Selector Tag</span></li>
+        <li><span class="property">Property Tag</span></li>
+        <li><span class="punctuation">Punctuation Tag</span></li>
+        <li><span class="value">Value Tag</span></li>
+        <div class="scrollmenu">
+            <pre>
+                <code>
+                    <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                    <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                <span class="selector">html</span> <span class="punctuation">{</span>
+                                    <span class="property">background&hyphen;color</span><span class="punctuation">&colon;</span><span class="value"> &num;E4264D</span><span class="punctuation">&semi;</span>
+                                    <span class="property">font&hyphen;family</span><span class="punctuation">&colon; </span><span class="value">Arial</span><span class="punctuation">&comma; </span><span class="value">Helvetica</span><span class="punctuation">&comma; </span><span class="value">sans&hyphen;serif</span><span class="punctuation">&semi;</span>
+                                    <span class="property">color</span><span class="punctuation">&colon; </span><span class="value">&num;EBEBEB</span><span class="punctuation">&semi;</span>
+                                <span class="punctuation">}</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                    <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                </code>
+            </pre>
+        </div>
+        <div>
+            <h4>
+                Output&colon;
+            </h4>
+            <a href="selectorsexampleoutput1.html" download>selectorsexampleoutput1.html</a>
+            <h4>
+                Notes&colon;
+            </h4>
+            <div class=c>
+                <li>Quick facts&colon; HTML code always have &lt; and &gt; symbols to reference an API element&comma; <code><span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span></code> refers to CSS in html&comma; <code><span class="htmlltgt">&lt;</span><span class="htmlelement">&sol;style</span><span class="htmlltgt">&gt;</span></code> refers to the ending of the CSS code&comma; so the engine can start loading HTML again&period;</li>
+                <li><code><span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span></code> and <code><span class="htmlltgt">&lt;</span><span class="htmlelement">&sol;p</span><span class="htmlltgt">&gt;</span></code> refers to a paragraph setting via HTML API&comma; in other words&comma; this is ideal for writing paragraphs with&period;</li>
+                <li>The <code><span class="htmlelement">&amp;comma&semi;</span></code> and <code><span class="htmlelement">&amp;excl&semi;</span></code> are HTML entities&comma; these are used for special unicode charcters found in the HTML API&period; Let&rsquo;s say we want to display HTML code on an HTML embedded site&comma; the engine will get confused and subject the example excerpt to actual HTML code into the site&comma; this avoids that problem with this&period;</li>
+                <li>The semicolon <code>&semi;</code> on the last line is unreasonable&comma; the CSS code is not continuing therefore it is optional to leave it blank&comma; however&comma; it&rsquo;s good practice&period;</li>
+            </div>
+        </div>
+        <div class=c>
+            Other things can be added to the selector&comma; as shown below.
+        </div>
+        <div class="scrollmenu">
+            <pre>
+                <code>
+                    <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                    <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">div </span><span class="property">class</span><span class="punctuation">&equals;</span><span class="value">&quot;custom&quot;</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                    <span class="selector">&period;custom</span><span class="punctuation">&comma;</span> <span class="selector">div&period;h</span>&nbsp;<span class="punctuation">{</span>
+                                    <span class="property">background&hyphen;color</span><span class="punctuation">&colon;</span><span class="value"> &num;E4264D</span><span class="punctuation">&semi;</span>
+                                    <span class="property">font&hyphen;family</span><span class="punctuation">&colon; </span><span class="value">Arial</span><span class="punctuation">&comma; </span><span class="value">Helvetica</span><span class="punctuation">&comma; </span><span class="value">sans&hyphen;serif</span><span class="punctuation">&semi;</span>
+                                    <span class="property">color</span><span class="punctuation">&colon; </span><span class="value">&num;EBEBEB</span><span class="punctuation">&semi;</span>
+                                    <span class="punctuation">}</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">div</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">div</span><span class="property"> class</span><span class="punctuation">&equals;</span><span class="value">&quot;h&quot;</span><span class="htmlltgt">&gt;</span>
+                                <span class="punctuation">Is this thing on</span><span class="htmlelement">&amp;quest&semi;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">div</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">div</span><span class="property"> class</span><span class="punctuation">&equals;</span><span class="value">&quot;a&quot;</span><span class="htmlltgt">&gt;</span>
+                                <span class="punctuation">We come from wotffagnraa</span><span class="htmlelement">&amp;comma&semi;</span><span class="punctuation"> do you copy</span><span class="htmlelement">&amp;quest&semi;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">div</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                    <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                </code>
+            </pre>
+            </div>
+            <div>
+                <h4>
+                    Output&colon;
+                </h4>
+                <a href="selectorsexampleoutput2.html" download>selectorsexampleoutput2.html</a>
+                <h4>
+                    Notes&colon;
+                </h4>
+                <div class=c>
+                    <li>wotffagnraa means &quot;we overcomplicate things for fun and generally no reason at all&quot; &semi;)</li>
+                </div>
+            </div>
+        </div>
+        <div class=c>More complicated selectors can be used to shorten CSS code or specify exactly which HTML element will be defined/stylized&period;
+            Using a period before a selector makes the selectors name custom from the CSS API&period;
+            See here&colon;
+        </div>
+        <div class="scrollmenu">
+            <pre>
+                <code>
+                    <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                    <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">div </span><span class="property">class</span><span class="punctuation">&equals;</span><span class="value">&quot;mycustomselector&quot;</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                    <span class="selector">&period;mycustomselector </span><span class="punctuation">{</span>
+                                    <span class="property">background&hyphen;color</span><span class="punctuation">&colon;</span> <span class="value">&num;4de426</span><span class="punctuation">&semi;</span>
+                                    <span class="property">font&hyphen;family</span><span class="punctuation">&colon; </span><span class="value">Arial</span><span class="punctuation">&comma; </span><span class="value">Helvetica</span><span class="punctuation">&comma; </span><span class="value">sans&hyphen;serif</span><span class="punctuation">&semi;</span>
+                                    <span class="property">color</span><span class="punctuation">&colon; </span><span class="value">&num;EBEBEB</span><span class="punctuation">&semi;</span>
+                                    <span class="punctuation">}</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">div</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                    <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                </code>
+            </pre>
+        </div>
+        <div>
+            <h4>
+                Output&colon;
+            </h4>
+            <a href="selectorsexampleoutput3.html" download>selectorsexampleoutput3.html</a>
+            <h4>
+                Notes&colon;
+            </h4>
+            <div class=c>
+                <li>You can also do &period;mycustomselector&period;partone&comma; to specify even more&period;</li>
+            </div>
+        </div>
+        <div class=c>
+            Simply putting <code>&ast;</code> as a selector&comma; it will apply to ALL elements&comma; it will not override any specified CSS code&comma; however&comma; it will stylize any unspecified elements&period;
+            Example below&colon;
+        </div>
+        <div class="scrollmenu">
+            <pre>
+                <code>
+                    <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                    <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">div </span><span class="property">class</span><span class="punctuation">&equals;</span><span class="value">&quot;mycustomselector&quot;</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                    <span class="selector">&period;mycustomselector </span><span class="punctuation">{</span>
+                                        <span class="property">background&hyphen;color</span><span class="punctuation">&colon;</span> <span class="value">&num;4de426</span><span class="punctuation">&semi;</span>
+                                        <span class="property">font&hyphen;family</span><span class="punctuation">&colon; </span><span class="value">Arial</span><span class="punctuation">&comma; </span><span class="value">Helvetica</span><span class="punctuation">&comma; </span><span class="value">sans&hyphen;serif</span><span class="punctuation">&semi;</span>
+                                        <span class="property">color</span><span class="punctuation">&colon; </span><span class="value">&num;EBEBEB</span><span class="punctuation">&semi;</span>
+                                    <span class="punctuation">}</span>
+                                    <span class="selector">&ast; </span><span class="punctuation">{</span>
+                                        <span class="property">font&hyphen;family</span><span class="punctuation">&colon; </span><span class="value">Arial</span><span class="punctuation">&comma; </span><span class="value">Helvetica</span><span class="punctuation">&comma; </span><span class="value">sans&hyphen;serif</span><span class="punctuation">&semi;</span>
+                                        <span class="property">color</span><span class="punctuation">&colon; </span><span class="value">&num;264DE4</span><span class="punctuation">&semi;</span>
+                                    <span class="punctuation">}</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">div</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                    <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                </code>
+            </pre>
+        </div>
+        <div>
+            <h4>
+                Output&colon;
+            </h4>
+            <a href="selectorsexampleoutput4.html" download>selectorsexampleoutput4.html</a>
+        </div>
+        <div>
+            <h4>
+                Errors&colon;
+            </h4>
+            <div class="error">
+                The &ast; selector can sometimes be broken, due to outdated versions of browsers or unsupported css reference&period;
+            </div>
+        </div>
+        <div class=c>
+            More selector information can be view on <a href="https://www.w3schools.com/cssref/css_selectors.asp">w3schools&period;com</a> for more inputs&period;
+        </div>
+        <h3 id="Properties">
+            Properties.
+        </h3>
+        <div class=c>
+            The property is found usually in the middle of CSS code&period;
+            This can be a general idea of visual changes&comma; so much so&comma; <a href="https://www.w3schools.com/cssref">w3schools</a> has an entire search list dedicated to properties&comma; but for now&comma; we&rsquo;ll look at the essential proporties for web&hyphen;making&period;
+            This section will explain the functions of every property and what it does&period;
+        </div>
+        <div class=c>
+            Mentionable property names are included below&colon;
+        </div>
+        <div class="scrollmenu">
+            <pre>
+                <code>
+                    <span class="font-face">
+                        &commat;font&hyphen;face
+                    </span>
+                    <span class="property">
+                        background&hyphen;color<span class="punctuation">&semi;</span>
+                        color<span class="punctuation">&semi;</span>
+                        font&hyphen;family<span class="punctuation">&semi;</span>
+                        font&hyphen;size<span class="punctuation">&semi;</span>
+                        font&hyphen;weight<span class="punctuation">&semi;</span>
+                        text&hyphen;align<span class="punctuation">&semi;</span>
+                        word&hyphen;wrap<span class="punctuation">&semi;</span>
+                        padding<span class="punctuation">&semi;</span>
+                        margin<span class="punctuation">&semi;</span>
+                        border<span class="punctuation">&semi;</span>
+                    </span>
+                </code>
+            </pre>
+        </div>
+        <div class=c>
+            <code><span class="font-face">&commat;font&hyphen;face</span></code> was added to learn importing custom font&hyphen;faces&period; Although&comma; it might not be a property&comma; it is one of the few &commat; rules&period; There will be a dedicated section towards at rules in the following&period;
+        </div>
+        <div> <!--background-color property-->
+            <h3 class="code" id="background-color"><span class="property">background&hyphen;color</span><span class="punctuation">&colon;</span></h3>
+            <div class=c>
+                This property will change the background color of the specified CSS selector&comma; meaning if the selector is the body element&comma; when applied&comma; it will change the background color of the body element AND anything inside the body element that is not specified via CSS&period;
+            </div>
+            <div class="scrollmenu">
+                <pre>
+                    <code>
+                        <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">div</span><span class="htmlltgt">&gt;</span>
+                                    <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                        <span class="selector">body </span><span class="punctuation">{</span>
+                                            <span class="property">background&hyphen;color</span><span class="punctuation">&colon;</span> <span class="value">&num;4de426</span><span class="punctuation">&semi;</span>
+                                        <span class="punctuation">}</span>
+                                    <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">div</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>
+                    Output&colon;
+                </h4>
+                <a href="propertiesexample1.html" download>propertiesexample1.html</a>
+            </div>
+        </div>
+        <div> <!--color property-->
+            <h3 class="code" id="color"><span class="property">color</span><span class="punctuation">&colon;</span></h3>
+            <div class=c>
+                This property will change the font color of the specified CSS selector&period;
+            </div>
+            <div class="scrollmenu">
+                <pre>
+                    <code>
+                        <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">div</span><span class="htmlltgt">&gt;</span>
+                                    <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                        Greetings<span class="htmlelement">&amp;excl&semi;</span>
+                                    <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                        <span class="selector">body </span><span class="punctuation">{</span>
+                                            <span class="property">color</span><span class="punctuation">&colon;</span> <span class="value">&num;4de426</span><span class="punctuation">&semi;</span>
+                                        <span class="punctuation">}</span>
+                                    <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">div</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>
+                    Output&colon;
+                </h4>
+                <a href="propertiesexample2.html" download>propertiesexample2.html</a>
+            </div>
+        </div>
+        <div> <!--font-family property-->
+            <h3 class="code" id="font-family"><span class="property">font&hyphen;family</span><span class="punctuation">&colon;</span></h3>
+            <div class=c>
+                This property will change the font face of the specified CSS selector&period;
+            </div>
+            <div class="scrollmenu">
+                <pre>
+                    <code>
+                        <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                    <span class="selector">body </span><span class="punctuation">{</span>
+                                        <span class="property">font&hyphen;family</span><span class="punctuation">&colon; </span><span class="value">Arial</span><span class="punctuation">&comma; </span><span class="value">Helvetica</span><span class="punctuation">&comma; </span><span class="value">sans&hyphen;serif</span><span class="punctuation">&semi;</span>
+                                    <span class="punctuation">}</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>
+                    Output&colon;
+                </h4>
+                <a href="propertiesexample3.html" download>propertiesexample3.html</a>
+            </div>
+        </div>
+        <div> <!--font-size property-->
+            <h3 class="code" id="font-size"><span class="property">font&hyphen;size</span><span class="punctuation">&colon;</span></h3>
+            <div class=c>
+                This property will change the font size of the specified CSS selector&period;
+            </div>
+            <div class="scrollmenu">
+                <pre>
+                    <code>
+                        <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                    <span class="selector">body </span><span class="punctuation">{</span>
+                                        <span class="property">font&hyphen;size</span><span class="punctuation">&colon; </span><span class="number">300px</span><span class="punctuation">&semi;</span>
+                                    <span class="punctuation">}</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>
+                    Output&colon;
+                </h4>
+                <a href="propertiesexample4.html" download>propertiesexample4.html</a>
+            </div>
+        </div>
+        <div> <!--font-weight property-->
+            <h3 class="code" id="font-weight"><span class="property">font&hyphen;weight</span><span class="punctuation">&colon;</span></h3>
+            <div class=c>
+                This property will change the font boldness of the specified CSS selector&period;
+            </div>
+            <div class="scrollmenu">
+                <pre>
+                    <code>
+                        <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                    <span class="selector">body </span><span class="punctuation">{</span>
+                                        <span class="property">font&hyphen;weight</span><span class="punctuation">&colon; </span><span class="number">900</span><span class="punctuation">&semi;</span>
+                                    <span class="punctuation">}</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>
+                    Output&colon;
+                </h4>
+                <a href="propertiesexample5.html" download>propertiesexample5.html</a>
+                <h4>
+                    Notes&colon;
+                </h4>
+                <div class=c>
+                    <li>Font weight will only be applied to supporting fonts&comma; meaning if you downloaded your font&comma; you have to reference it via <code><span class="font-face">&commat;font&hyphen;face</span></code>&comma; if linked via url&comma; it can automatically be supported&period;</li>
+                </div>
+            </div>
+        </div>
+        <div> <!--text-align property-->
+            <h3 class="code" id="text-align"><span class="property">text&hyphen;align</span><span class="punctuation">&colon;</span></h3>
+            <div class=c>
+                This property will change the text alignment of the specified CSS selector&period;
+            </div>
+            <div class="scrollmenu">
+                <pre>
+                    <code>
+                        <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                    <span class="selector">body </span><span class="punctuation">{</span>
+                                        <span class="property">text&hyphen;align</span><span class="punctuation">&colon; </span><span class="value">right</span><span class="punctuation">&semi;</span>
+                                    <span class="punctuation">}</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>
+                    Output&colon;
+                </h4>
+                <a href="propertiesexample6.html" download>propertiesexample6.html</a>
+            </div>
+        </div>
+        <div> <!--word-wrap property-->
+            <h3 class="code" id="word-wrap"><span class="property">word&hyphen;wrap</span><span class="punctuation">&colon;</span></h3>
+            <div class=c>
+                This property will set the text wrap of the specified CSS selector&period;
+            </div>
+            <div class="scrollmenu">
+                <pre>
+                    <code>
+                        <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                    <span class="selector">body </span><span class="punctuation">{</span>
+                                        <span class="property">word&hyphen;wrap</span><span class="punctuation">&colon; </span><span class="value">normal</span><span class="punctuation">&semi;</span>
+                                    <span class="punctuation">}</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>
+                    Output&colon;
+                </h4>
+                <a href="propertiesexample7.html" download>propertiesexample7.html</a>
+            </div>
+            <h4>
+                Notes&colon;
+            </h4>
+            <div class=c>
+                <li>To see actual results&comma; you&apos;ll have to type more&period;</li>
+            </div>
+        </div>
+        <div> <!--padding property-->
+            <h3 class="code" id="padding"><span class="property">padding</span><span class="punctuation">&colon;</span></h3>
+            <div class=c>
+                This property will set the padding size of the specified CSS selector&period;
+            </div>
+            <div class="scrollmenu">
+                <pre>
+                    <code>
+                        <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                    <span class="selector">body </span><span class="punctuation">{</span>
+                                        <span class="property">padding</span><span class="punctuation">&colon; </span><span class="number">20px</span><span class="punctuation">&semi;</span>
+                                    <span class="punctuation">}</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>
+                    Output&colon;
+                </h4>
+                <a href="propertiesexample8.html" download>propertiesexample8.html</a>
+            </div>
+        </div>
+        <div> <!--margin property-->
+            <h3 class="code" id="margin"><span class="property">margin</span><span class="punctuation">&colon;</span></h3>
+            <div class=c>
+                This property will set the margin space any of the four directions of the specified CSS selector&period;
+            </div>
+            <div class="scrollmenu">
+                <pre>
+                    <code>
+                        <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                    <span class="selector">body </span><span class="punctuation">{</span>
+                                        <span class="property">margin</span><span class="punctuation">&colon; </span><span class="number">20px</span><span class="punctuation">&semi;</span>
+                                    <span class="punctuation">}</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>
+                    Output&colon;
+                </h4>
+                <a href="propertiesexample9.html" download>propertiesexample9.html</a>
+                <h4>
+                    Other Output&colon;
+                </h4>
+                <a href="HTMLexamples/propertiesexamples/propertiesexample9Folder/" download>propertiesexample9Folder</a>
+            </div>
+        </div>
+        <div> <!--border property-->
+            <h3 class="code" id="border"><span class="property">border</span><span class="punctuation">&colon;</span></h3>
+            <div class=c>
+                This property will set the border size any of the four directions of the specified CSS selector&period; We&apos;ll be doing the shape&period;
+            </div>
+            <div class="scrollmenu">
+                <pre>
+                    <code>
+                        <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                    <span class="selector">body </span><span class="punctuation">{</span>
+                                        <span class="property">border</span><span class="punctuation">&colon; </span><span class="number">20px</span><span class="punctuation">&semi;</span>
+                                    <span class="punctuation">}</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>
+                    Output&colon;
+                </h4>
+                <a href="propertiesexample10.html" download>propertiesexample10.html</a>
+                <h4>
+                    Other Output&colon;
+                </h4>
+                <a href="HTMLexamples/propertiesexamples/propertiesexample10Folder/" download>propertiesexample10Folder</a>
+                <h4>
+                    Notes&colon;
+                </h4>
+                <div class=c>
+                    For perspective on how many border properties there are here&apos;s a screenshot of how many there are&comma; and to note&comma; this isn&apos;t the entire list&period;
+                </div>
+                <img src="borderpropertiesscreenshot.png">
+            </div>
+        </div>
+        <div> <!--@font-face at rule-->
+            <h3 class="code" id="@font-face"><span class="font-face">&commat;font&hyphen;face</span></h3>
+            <div class=c>
+                This special code is an at rule&comma; in this case&comma; specifies what font you want to display in custom styles&period; <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">More information from the MDN Mozilla Web Docs&period;</a> But basically&comma; it is formatted like this&colon;
+            </div>
+            <div class="scrollmenu">
+                <pre>
+                    <code>
+                        <span class="htmlltgt">&lt;&excl;</span><span class="htmlelement">DOCTYPE</span><span class="property"> html</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                    Hello<span class="htmlelement">&amp;comma&semi;</span> world<span class="htmlelement">&amp;excl&semi;</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">p</span><span class="htmlltgt">&gt;</span>
+                                <span class="htmlltgt">&lt;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                                <span class="font-face">&commat;font&hyphen;face</span> <span class="punctuation">{</span>
+                                    <span class="property">font&hyphen;family</span><span class="punctuation">&colon; CircularStd&hyphen;Medium&semi;</span>
+                                    <span class="property">src</span><span class="punctuation">&colon;</span><span class="url"> url</span><span class="punctuation">&lpar;</span><span class="value">&apos;CircularStd&hyphen;Medium&period;ttf&apos;</span><span class="punctuation">&rpar;&semi;</span>
+                                <span class="punctuation">}</span>
+                                    <span class="selector">p </span><span class="punctuation">{</span>
+                                        <span class="property">font&hyphen;family</span><span class="punctuation">&colon; CircularStd&hyphen;Medium&period;ttf&semi;</span>
+                                    <span class="punctuation">}</span>
+                                <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">style</span><span class="htmlltgt">&gt;</span>
+                            <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">body</span><span class="htmlltgt">&gt;</span>
+                        <span class="htmlltgt">&lt;&sol;</span><span class="htmlelement">html</span><span class="htmlltgt">&gt;</span>
+                    </code>
+                </pre>
+            </div>
+            <div>
+                <h4>
+                    Output&colon;
+                </h4>
+                <a href="@font-faceexample.html" download>&commat;font&hyphen;faceexample.html</a>
+                <h4>
+                    Font download&colon;
+                </h4>
+                <a href="CircularStd-Medium.ttf" download>CircularStd&hyphen;Medium&period;ttf</a>
+            </div>
+        </div>
+    </body>
+</html>
